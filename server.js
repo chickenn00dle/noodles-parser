@@ -6,7 +6,7 @@ const app = express();
 app.get('/', (req, res) => {
   let ipAddress = req.get('x-forwarded-for').replace(/^([0-9.]*),.*/, '$1'),
       language = req.get('accept-language').replace(/^([a-zA-Z-]*),.*/, '$1'),
-      software = req.get('user-agent').replace(/^.*\s\((.*)\).*/, '$1');
+      software = req.get('user-agent').replace(/^\S*\s\(([^\)]*)\).*/, '$1');
 
   console.log(software);
   
