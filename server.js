@@ -4,10 +4,11 @@ const port = process.env.PORT;
 const app = express();
 
 app.get('/', (req, res) => {
-  console.log(req);
-  let ipAddress = req.get('x-forwarded-for'),
+  let ipAddress = req.get('x-forwarded-for').replace(/^(.*),.*/, '$1'),
       language = req.get('accept-language'),
       software = req.get('user-agent');
+  
+  console.log(ipAddress);
   
   let json = {
     'ipaddress': ipAddress,
