@@ -1,7 +1,6 @@
 {
   "//1": "A Parser Microservice",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
+  "//2": "https://noodles-parser.glitch.me/"
   "name": "noodles-parser",
   "version": "0.0.1",
   "description": "Returns your browsers IP address, Language, and Software Version in JSON format.",
@@ -16,7 +15,7 @@
     "node": "8.x"
   },
   "repository": {
-    "url": "https://github.com/chickenn00dle/noodles-parser"
+    "url": "https://github.com/chickenn00dle/noodles-parser.git"
   },
   "license": "MIT",
   "keywords": [
