@@ -1,6 +1,6 @@
 {
   "//1": "A Parser Microservice",
-  "//2": "https://noodles-parser.glitch.me/"
+  "//2": "https://noodles-parser.glitch.me/",
   "name": "noodles-parser",
   "version": "0.0.1",
   "description": "Returns your browsers IP address, Language, and Software Version in JSON format.",
